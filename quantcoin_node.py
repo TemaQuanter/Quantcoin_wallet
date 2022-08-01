@@ -33,7 +33,7 @@ class QuantcoinNode(Node):
     active_nodes = set()
 
     # Python class constructor
-    def __init__(self, host, port, require_connection=True, id=None, callback=None, max_connections=100):
+    def __init__(self, host, port, require_connection=True, id=None, callback=None, max_connections=10):
         if require_connection:
             super(QuantcoinNode, self).__init__(host, port, id, callback, max_connections)
 
